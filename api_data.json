@@ -1,0 +1,25 @@
+{
+    "message": "sign language api",
+    "endpoints": [
+        {
+            "method": "GET",
+            "path": "/",
+            "description": "Root endpoint"
+        },
+        {
+            "method": "OPTIONS",
+            "path": "/a2sl",
+            "description": "Handle preflight requests for /a2sl"
+        },
+        {
+            "method": "POST",
+            "path": "/a2sl",
+            "description": "Convert text to sign language videos"
+        }
+    ],
+    "cors": {
+        "allow_origins": ["*"],
+        "allow_methods": ["*"],
+        "allow_headers": ["*"]
+    }
+}
